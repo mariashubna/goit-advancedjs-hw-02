@@ -24,7 +24,6 @@ const options = {
       startBtn.setAttribute('disabled', '');
 
       iziToast.error({
-        title: 'Error',
         message: 'Please choose a date in the future',
         position: 'topRight',
       });
@@ -86,7 +85,6 @@ function dataTimer(evt) {
       seconds.textContent = '00';
 
       iziToast.success({
-        title: 'Success',
         message: 'Time is up!',
         position: 'topRight',
       });

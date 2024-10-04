@@ -14,14 +14,12 @@ function createPromise(evt) {
   newPromise(delay, state)
     .then(value => {
       iziToast.success({
-        title: 'Success',
         message: value,
         position: 'topRight',
       });
     })
     .catch(error => {
       iziToast.error({
-        title: 'Error',
         message: error,
         position: 'topRight',
       });
