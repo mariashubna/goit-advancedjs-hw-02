@@ -63,6 +63,7 @@ startBtn.addEventListener('click', dataTimer);
 
 function dataTimer(evt) {
   startBtn.setAttribute('disabled', '');
+  input.setAttribute('disabled', '');
   let userDate = userSelectedDate;
 
   if (intervalId) {
@@ -88,6 +89,8 @@ function dataTimer(evt) {
         message: 'Time is up!',
         position: 'topRight',
       });
+
+      input.removeAttribute('disabled', '');
     }
   }, 1000);
 }
